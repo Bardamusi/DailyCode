@@ -11,7 +11,7 @@ Bonus: Can you do this in one pass?
 """
 
 
-def GoogleSumA(list, k):
+def google_sumA(list, k):
     """
     :param list: of numbers two of which should sum up to
     :param k: the number they should sum to
@@ -29,7 +29,7 @@ def GoogleSumA(list, k):
     return False
 
 
-def GoogleSumB(list, k):
+def google_sumB(list, k):
     """
     :param list: of numbers two of which should sum up to
     :param k: the number they should sum to
@@ -42,7 +42,6 @@ def GoogleSumB(list, k):
 
     while low_index <= high_index:
         test_val = sorted_l[low_index] + sorted_l[high_index]
-        print(test_val)
         if test_val == k:
             return True
         elif test_val < k:
@@ -55,5 +54,5 @@ def GoogleSumB(list, k):
 
 if __name__ == "__main__":
     test1 = [10, 15, 3, 7, -10, 5, 0, 0]
-    print(GoogleSumA(test1, 17))
-    print(GoogleSumB(test1, 17))
+    print(google_sumA(test1, 17))
+    print(google_sumB(test1, 17))
